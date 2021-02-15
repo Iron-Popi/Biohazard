@@ -1,0 +1,97 @@
+.room {
+    background-image: url("/images/dining-room/dining-room.jpeg");
+    background-size: 100%;
+    position: relative;
+}
+
+#doors {
+    position: fixed;
+    height: 36%;
+    top: 305px;
+    left :371px;
+}
+
+#doors:hover {
+    cursor: pointer;
+}
+
+#painting1 {
+    position: fixed;
+    height: 36%;
+    top: 153px;
+    left :56px;
+}
+
+#painting1:hover {
+    cursor: pointer;
+}
+
+#painting2 {
+    position: fixed;
+    height: 19%;
+    top: 245px;
+    left :668px;
+}
+
+#painting2:hover {
+    cursor: pointer;
+}
+
+#painting3 {
+    position: fixed;
+    height: 16%;
+    top: 272px;
+    right :386px;
+}
+
+#painting3:hover {
+    cursor: pointer;
+}
+
+#painting4 {
+    position: fixed;
+    height: 21%;
+    top: 225px;
+    right :5px;
+}
+
+#painting4:hover {
+    cursor: pointer;
+}
+
+#dresser {
+    position: fixed;
+    height: 21%;
+    top: 265px;
+    right :635px;
+}
+
+#dresser:hover {
+    cursor: pointer;
+}
+
+#pot {
+    height: 11%;
+    position: fixed;
+    top: 425px;
+    right :510px;
+}
+
+#pot:hover {
+    cursor: pointer;
+}
+
+.text-box {
+    display: flex;
+    justify-content:center;
+}
+
+span {
+    background-color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 15px;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 15px;
+}

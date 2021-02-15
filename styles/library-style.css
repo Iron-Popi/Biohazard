@@ -1,0 +1,97 @@
+.room {
+    background-image: url("/images/library/library.jpg");
+    background-size: 100%;
+    position: relative;
+}
+
+#lights {
+    position: fixed;
+    height: 29%;
+    top: 0px;
+    left :646px;
+}
+
+#lights:hover {
+    cursor: pointer;
+}
+
+#table {
+    position: fixed;
+    height: 17%;
+    bottom: 118px;
+    left :430px;
+}
+
+#table:hover {
+    cursor: pointer;
+}
+
+#window {
+    position: fixed;
+    height: 70%;
+    bottom: 88px;
+    right :285px;
+}
+
+#window:hover {
+    cursor: pointer;
+}
+
+#bookshelf1 {
+    position: fixed;
+    height: 70%;
+    top: 60px;
+    left: 132px;
+}
+
+#bookshelf1:hover {
+    cursor: pointer;
+}
+
+#bookshelf2 {
+    position: fixed;
+    height: 35%;
+    top: 233px;
+    left: 510px;
+}
+
+#bookshelf2:hover {
+    cursor: pointer;
+}
+
+#mess-floor {
+    position: fixed;
+    height: 17%;
+    bottom: 17px;
+    right: 375px;
+}
+
+#mess-floor:hover {
+    cursor: pointer;
+}
+
+#books {
+    position: fixed;
+    height: 3.5%;
+    bottom: 255px;
+    right: 670px;
+}
+
+#books:hover {
+    cursor: pointer;
+}
+
+.text-box {
+    display: flex;
+    justify-content:center;
+}
+
+span {
+    background-color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 15px;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 15px;
+}

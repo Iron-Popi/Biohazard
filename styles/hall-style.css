@@ -1,0 +1,86 @@
+.room {
+    background-image: url("/images/hall/hall.jpg");
+    background-size: 100%;
+    position: relative;
+}
+
+#piano {
+    height: 45%;
+    position: fixed;
+    bottom: -78px;
+    left: 340px;
+}
+
+#piano:hover {
+    cursor: pointer;
+}
+
+#door1 {
+    height: 100%;
+    position: fixed;
+    top: 155px;
+    left: 130px;
+}
+
+#door1:hover {
+    cursor: pointer;
+}
+
+#door2 {
+    height: 42%;
+    position: fixed;
+    bottom: 80px;
+    left: 495px;
+}
+
+#door2:hover {
+    cursor: pointer;
+}
+
+#door3 {
+    height: 35.5%;
+    position: fixed;
+    bottom: 97px;
+    right: 755px;
+}
+
+#door3:hover {
+    cursor: pointer;
+}
+
+#door4 {
+    height: 100%;
+    position: fixed;
+    top: 155px;
+    right: 130px;
+}
+
+#door4:hover {
+    cursor: pointer;
+}
+
+#shadow {
+    height: 53%;
+    position: fixed;
+    top: 135px;
+    right: 420px;
+}
+
+#shadow:hover {
+    cursor: pointer;
+}
+
+.text-box {
+    display: flex;
+    justify-content:center;
+}
+
+span {
+    background-color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 15px;
+    padding: 10px;
+    border: solid 1px;
+    border-radius: 15px;
+}
