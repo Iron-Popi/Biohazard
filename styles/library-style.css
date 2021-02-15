@@ -4,81 +4,61 @@
     position: relative;
 }
 
-#lights {
+#lights, #table, #window, #bookshelf1, #bookshelf2, #mess-floor, #books {
     position: fixed;
-    height: 29%;
-    top: 0px;
-    left :646px;
 }
 
-#lights:hover {
+#lights, #table, #window, #bookshelf1, #bookshelf2, #mess-floor, #books:hover {
     cursor: pointer;
+}
+
+#lights {
+    height: 21%;
+    width: 15%;
+    top: 3%;
+    left: 40%;
 }
 
 #table {
-    position: fixed;
-    height: 17%;
-    bottom: 118px;
-    left :430px;
-}
-
-#table:hover {
-    cursor: pointer;
+    height: 16%;
+    width: 22%;
+    bottom: 16%;
+    left: 27%;
 }
 
 #window {
-    position: fixed;
-    height: 70%;
-    bottom: 88px;
-    right :285px;
-}
-
-#window:hover {
-    cursor: pointer;
+    height: 47%;
+    width: 6%;
+    top: 23%;
+    right: 18%;
 }
 
 #bookshelf1 {
-    position: fixed;
-    height: 70%;
-    top: 60px;
-    left: 132px;
-}
-
-#bookshelf1:hover {
-    cursor: pointer;
+    height: 60%;
+    width: 6%;
+    top: 14%;
+    left: 8%;
 }
 
 #bookshelf2 {
-    position: fixed;
-    height: 35%;
-    top: 233px;
-    left: 510px;
-}
-
-#bookshelf2:hover {
-    cursor: pointer;
+    height: 34%;
+    width: 6%;
+    top: 31%;
+    left: 32%;
 }
 
 #mess-floor {
-    position: fixed;
-    height: 17%;
-    bottom: 17px;
-    right: 375px;
-}
-
-#mess-floor:hover {
-    cursor: pointer;
+    height: 14%;
+    width: 16%;
+    bottom: 4%;
+    right: 23%;
 }
 
 #books {
-    position: fixed;
-    height: 3.5%;
-    bottom: 255px;
-    right: 670px;
-}
-
-#books:hover {
-    cursor: pointer;
+    height: 4%;
+    width: 4%;
+    bottom: 33%;
+    right: 42%;
 }
 
 .text-box {
@@ -87,11 +67,17 @@
 }
 
 span {
-    background-color: white;
-    text-align: center;
+    background-color:lightgray;
     position: fixed;
-    bottom: 15px;
+    bottom: 3%;
     padding: 10px;
-    border: solid 1px;
+    border: solid 1px darkgrey;
     border-radius: 15px;
+}
+
+button {
+    position: fixed;
+    padding: 8px;
+    bottom: 3%;
+    right: 2%;
 }

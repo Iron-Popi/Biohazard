@@ -1,73 +1,59 @@
 .room {
     background-image: url("/images/hall/hall.jpg");
     background-size: 100%;
+    background-repeat: no-repeat;
     position: relative;
+    
 }
 
-#piano {
-    height: 45%;
+#door1, #door2, #door3, #door4, #piano, #shadow {
     position: fixed;
-    bottom: -78px;
-    left: 340px;
 }
 
-#piano:hover {
+#door1, #door2, #door3, #door4, #piano, #shadow:hover {
     cursor: pointer;
 }
 
 #door1 {
-    height: 100%;
-    position: fixed;
-    top: 155px;
-    left: 130px;
+    top: 20%;
+    left: 7%;
+    height: 80%;
+    width: 11%;
 }
 
-#door1:hover {
-    cursor: pointer;
+#piano {
+    top: 65%;
+    left: 22%;
+    height: 30%;
+    width: 13%;
 }
 
 #door2 {
-    height: 42%;
-    position: fixed;
-    bottom: 80px;
-    left: 495px;
-}
-
-#door2:hover {
-    cursor: pointer;
+    top: 50%;
+    left: 32%;
+    height: 40%;
+    width: 8%;
 }
 
 #door3 {
-    height: 35.5%;
-    position: fixed;
-    bottom: 97px;
-    right: 755px;
-}
-
-#door3:hover {
-    cursor: pointer;
+    top: 52%;
+    right: 46.5%;
+    height: 35%;
+    width: 8%;
 }
 
 #door4 {
-    height: 100%;
-    position: fixed;
-    top: 155px;
-    right: 130px;
-}
-
-#door4:hover {
-    cursor: pointer;
+    top: 25%;
+    right: 7%;
+    height: 75%;
+    width: 13%;
 }
 
 #shadow {
-    height: 53%;
-    position: fixed;
-    top: 135px;
-    right: 420px;
-}
-
-#shadow:hover {
-    cursor: pointer;
+    top: 17%;
+    right: 27%;
+    height: 45%;
+    width: 7%;
 }
 
 .text-box {
@@ -76,11 +62,10 @@
 }
 
 span {
-    background-color: white;
-    text-align: center;
+    background-color:lightgray;
     position: fixed;
-    bottom: 15px;
+    bottom: 3%;
     padding: 10px;
-    border: solid 1px;
+    border: solid 1px darkgrey;
     border-radius: 15px;
 }
