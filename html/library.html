@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/general-style.css">
     <link rel="stylesheet" href="/styles/library-style.css">
     <script type="module" src="/scripts/library-script.js"></script>
     <title>Library</title>
@@ -16,9 +17,19 @@
     <div id="bookshelf2"></div>
     <div id="mess-floor"></div>
     <div id="books"></div>
+    
+    <div id="clue">
+        <strong>9.</strong>
+        <p>RELEASE SURVIVAL</p>
+    </div>
     <div class="text-box">
         <span>...</span>
-        <a href="/html/hall.html"><button>Back to the hall</button></a>
+        <a href="/html/hall.html"><button id="back">Back to the hall</button></a>
+    </div>
+    <div id="zombie-box">
+        <p>YOU DIED</p>
+        <img id="zombie" src="/images/zombies/zombie-dog.png" alt="zombie">
+        <a href="/html/home.html"><button>Start again</button></a>
     </div>
 </body>
 </html>

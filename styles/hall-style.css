@@ -1,16 +1,12 @@
 .room {
     background-image: url("/images/hall/hall.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    position: relative;
-    
 }
 
 #door1, #door2, #door3, #door4, #piano, #shadow {
     position: fixed;
 }
 
-#door1, #door2, #door3, #door4, #piano, #shadow:hover {
+#door1, #door3, #door4, #piano, #shadow:hover {
     cursor: pointer;
 }
 
@@ -56,16 +52,8 @@
     width: 7%;
 }
 
-.text-box {
-    display: flex;
-    justify-content:center;
-}
-
-span {
-    background-color:lightgray;
-    position: fixed;
-    bottom: 3%;
-    padding: 10px;
-    border: solid 1px darkgrey;
-    border-radius: 15px;
+#clue > p {
+    top: 45%;
+    left: 35%;
+    transform: translate(0, -50%);
 }

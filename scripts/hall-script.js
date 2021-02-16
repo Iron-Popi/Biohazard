@@ -1,55 +1,79 @@
-const doorback = document.getElementById("door3");
+const doorLeft = document.getElementById("door1");
+const doorRight = document.getElementById("door4");
+const doorBack = document.getElementById("door3");
+const doorSide = document.getElementById("door2");
 const piano = document.getElementById("piano");
+const clue = document.getElementById("clue");
 const shadow = document.getElementById("shadow");
-const doorside = document.getElementById("door2");
+const zombie = document.getElementById("zombie-box");
 
-doorback.addEventListener('click', () => {
-    if (document.querySelector('.text-box span').innerHTML !== "This door is locked.") {
-        document.querySelector('.text-box span').innerHTML = "This door is locked.";
-    } else if (document.querySelector('.text-box span').innerHTML === "This door is locked.") {
-        document.querySelector('.text-box span').innerHTML = "...";
+doorLeft.addEventListener('mouseover', () => {
+    document.querySelector('.text-box span').innerHTML = "It's open.";
+});
+
+doorLeft.addEventListener('mouseout', () => {
+    document.querySelector('.text-box span').innerHTML = "...";
+});
+
+doorBack.addEventListener('mouseover', () => {
+    document.querySelector('.text-box span').innerHTML = "This door is locked, but I think it can be opened with a code.";
+});
+
+doorBack.addEventListener('mouseout', () => {
+    document.querySelector('.text-box span').innerHTML = "...";
+});
+
+doorBack.addEventListener('click', () => {
+    let code = prompt("Code:", "_ _ _");
+    if (code === "396"){
+        window.location.href="/html/end.html";
+    // } if (code !== "396"){
+    // document.querySelector('.text-box span').innerHTML = "That's not it."; // This part doesn't work.
     }
-  });
+});
 
-  piano.addEventListener('click', () => {
-    if (document.querySelector('.text-box span').innerHTML !== "Ting ting, I don't know how to play music.") {
-        document.querySelector('.text-box span').innerHTML = "Ting ting, I don't know how to play music.";
-    } else if (document.querySelector('.text-box span').innerHTML === "Ting ting, I don't know how to play music.") {
-        document.querySelector('.text-box span').innerHTML = "...";
+piano.addEventListener('mouseover', () => {
+    document.querySelector('.text-box span').innerHTML = "Ting ting, I don't know how to play music.";
+});
+
+piano.addEventListener('mouseout', () => {
+    document.querySelector('.text-box span').innerHTML = "...";
+});
+
+piano.addEventListener('click', () => {
+    if (clue.style.visibility === "hidden") {
+        clue.style.visibility = "visible";
+        document.querySelector('.text-box span').innerHTML = "I found something!";
     }
-  });
-
-  shadow.addEventListener('click', () => {
-    if (document.querySelector('.text-box span').innerHTML !== "You shouldn't have done that.") {
-        document.querySelector('.text-box span').innerHTML = "You shouldn't have done that.";
-    } else if (document.querySelector('.text-box span').innerHTML === "You shouldn't have done that.") {
-        document.querySelector('.text-box span').innerHTML = "...";
+    else {
+        clue.style.visibility = "hidden";
     }
-  });
+});
 
-  doorside.addEventListener('click', () => {
-    if (document.querySelector('.text-box span').innerHTML !== "This door is open, but there is nothing usefull inside.") {
-        document.querySelector('.text-box span').innerHTML = "This door is open, but there is nothing usefull inside.";
-    } else if (document.querySelector('.text-box span').innerHTML === "This door is open, but there is nothing usefull inside.") {
-        document.querySelector('.text-box span').innerHTML = "...";
-    }
-  });
+doorSide.addEventListener('mouseover', () => {
+    document.querySelector('.text-box span').innerHTML = "This door is open, but there is nothing usefull inside.";
+});
 
-// function closedDoor() {
-// }
+doorSide.addEventListener('mouseout', () => {
+    document.querySelector('.text-box span').innerHTML = "...";
+});
 
-// function pianoInteract() {
-// }
+doorRight.addEventListener('mouseover', () => {
+    document.querySelector('.text-box span').innerHTML = "It's open.";
+});
 
-// function shadowKillYou() {
-// }
+doorRight.addEventListener('mouseout', () => {
+    document.querySelector('.text-box span').innerHTML = "...";
+});
 
-// function emptyDoor() {
-//   }
+shadow.addEventListener('mouseover', () => {
+    document.querySelector('.text-box span').innerHTML = "Is there anyone here?";
+});
 
-// window.addEventListener('load', () => {
-//     door.addEventListener('click', closedDoor);
-//     piano.addEventListener('click', pianoInteract);
-//     shadow.addEventListener('click', shadowKillYou);
-//     door2.addEventListener('click', emptyDoor);
-// })
+shadow.addEventListener('mouseout', () => {
+    document.querySelector('.text-box span').innerHTML = "...";
+});
+
+shadow.addEventListener('click', () => {
+    zombie.style.visibility = "visible";
+});

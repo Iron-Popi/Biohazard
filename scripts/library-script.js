@@ -5,59 +5,82 @@ const bookshelf1 = document.getElementById("bookshelf1");
 const bookshelf2 = document.getElementById("bookshelf2");
 const mess = document.getElementById("mess-floor");
 const books = document.getElementById("books");
+const zombie = document.getElementById("zombie-box");
 
-lights.addEventListener('click', () => {
-    if (document.querySelector('.text-box span').innerHTML !== "No power... I can barely see!") {
+lights.addEventListener('mouseover', () => {
         document.querySelector('.text-box span').innerHTML = "No power... I can barely see!";
-    } else if (document.querySelector('.text-box span').innerHTML === "No power... I can barely see!") {
-        document.querySelector('.text-box span').innerHTML = "...";
-    }
-  });
+});
 
-windows.addEventListener('click', () => {
-    if (document.querySelector('.text-box span').innerHTML !== "You shouldn't have done that.") {
-        document.querySelector('.text-box span').innerHTML = "You shouldn't have done that.";
-    } else if (document.querySelector('.text-box span').innerHTML === "You shouldn't have done that.") {
-        document.querySelector('.text-box span').innerHTML = "...";
-    }
-  });
+lights.addEventListener('mouseout', () => {
+    document.querySelector('.text-box span').innerHTML = "...";
+});
+
+table.addEventListener('mouseover', () => {
+        document.querySelector('.text-box span').innerHTML = "There is something written here!";
+});
+
+table.addEventListener('mouseout', () => {
+    document.querySelector('.text-box span').innerHTML = "...";
+});
 
 table.addEventListener('click', () => {
-    if (document.querySelector('.text-box span').innerHTML !== "There is something written here!") {
-        document.querySelector('.text-box span').innerHTML = "There is something written here!";
-    } else if (document.querySelector('.text-box span').innerHTML === "There is something written here!") {
-        document.querySelector('.text-box span').innerHTML = "...";
+    if (clue.style.visibility === "hidden") {
+        clue.style.visibility = "visible";
+        document.querySelector('.text-box span').innerHTML = "I found something!";
     }
-  });
+    else {
+        clue.style.visibility = "hidden";
+    }
+});
 
-bookshelf1.addEventListener('click', () => {
-    if (document.querySelector('.text-box span').innerHTML !== "Nothing written on the cover, how convenient...") {
-        document.querySelector('.text-box span').innerHTML = "Nothing written on the cover, how convenient...";
-    } else if (document.querySelector('.text-box span').innerHTML === "Nothing written on the cover, how convenient...") {
-        document.querySelector('.text-box span').innerHTML = "...";
-    }
-  });
-  
+bookshelf1.addEventListener('mouseover', () => {
+    document.querySelector('.text-box span').innerHTML = "Nothing written on the covers, how convenient...";
+});
+
+bookshelf1.addEventListener('mouseout', () => {
+    document.querySelector('.text-box span').innerHTML = "...";
+});
+
+bookshelf2.addEventListener('mouseover', () => {
+    document.querySelector('.text-box span').innerHTML = "There must be something here.";
+});
+
+bookshelf2.addEventListener('mouseout', () => {
+    document.querySelector('.text-box span').innerHTML = "...";
+});
+
 bookshelf2.addEventListener('click', () => {
-    if (document.querySelector('.text-box span').innerHTML !== "There must be something here.") {
-        document.querySelector('.text-box span').innerHTML = "There must be something here.";
-    } else if (document.querySelector('.text-box span').innerHTML === "There must be something here.") {
-        document.querySelector('.text-box span').innerHTML = "...";
-    }
-  });
+    document.querySelector('.text-box span').innerHTML = "Too much to read, I don't even know where to start.";
+});
+
+mess.addEventListener('mouseover', () => {
+    document.querySelector('.text-box span').innerHTML = "Carefull not to trip on this.";
+});
     
-mess.addEventListener('click', () => {
-    if (document.querySelector('.text-box span').innerHTML !== "Carefull not to trip on this.") {
-        document.querySelector('.text-box span').innerHTML = "Carefull not to trip on this.";
-    } else if (document.querySelector('.text-box span').innerHTML === "Carefull not to trip on this.") {
-        document.querySelector('.text-box span').innerHTML = "...";
-    }
-  });
+mess.addEventListener('mouseout', () => {
+    document.querySelector('.text-box span').innerHTML = "...";
+});
+
+books.addEventListener('mouseover', () => {
+    document.querySelector('.text-box span').innerHTML = "Maybe here?";
+});
     
+books.addEventListener('mouseout', () => {
+    document.querySelector('.text-box span').innerHTML = "...";
+});
+
 books.addEventListener('click', () => {
-    if (document.querySelector('.text-box span').innerHTML !== "Blank pages, why?") {
-        document.querySelector('.text-box span').innerHTML = "Blank pages, why?";
-    } else if (document.querySelector('.text-box span').innerHTML === "Blank pages, why?") {
-        document.querySelector('.text-box span').innerHTML = "...";
-    }
-  });
+    document.querySelector('.text-box span').innerHTML = "Blank pages, why?!";
+});
+
+windows.addEventListener('mouseover', () => {
+    document.querySelector('.text-box span').innerHTML = "I think I can hear something... Is it an animal?";
+});
+    
+windows.addEventListener('mouseout', () => {
+    document.querySelector('.text-box span').innerHTML = "...";
+});
+
+windows.addEventListener('click', () => {
+    zombie.style.visibility = "visible";
+});

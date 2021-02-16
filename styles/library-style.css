@@ -1,14 +1,12 @@
 .room {
     background-image: url("/images/library/library.jpg");
-    background-size: 100%;
-    position: relative;
 }
 
 #lights, #table, #window, #bookshelf1, #bookshelf2, #mess-floor, #books {
     position: fixed;
 }
 
-#lights, #table, #window, #bookshelf1, #bookshelf2, #mess-floor, #books:hover {
+#table, #bookshelf2, #window, #mess-floor, #books:hover {
     cursor: pointer;
 }
 
@@ -61,21 +59,13 @@
     right: 42%;
 }
 
-.text-box {
-    display: flex;
-    justify-content:center;
+#clue > p {
+    top: 45%;
+    left: 35%;
+    transform: translate(0, -50%);
 }
 
-span {
-    background-color:lightgray;
-    position: fixed;
-    bottom: 3%;
-    padding: 10px;
-    border: solid 1px darkgrey;
-    border-radius: 15px;
-}
-
-button {
+#back {
     position: fixed;
     padding: 8px;
     bottom: 3%;

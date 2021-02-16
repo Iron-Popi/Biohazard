@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Long+Cang&display=swap');
+
+.room {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#clue {
+    position: absolute;
+    width: 300px;
+    height: 225px;
+    top: 1250%;
+    left: 40%;
+    background-color:rgb(230, 230, 185);
+    z-index: 1;
+    box-shadow: 0 0 30px 50px rgba(0, 0, 0, 0.700);
+    visibility: hidden;
+}
+
+#clue > p {
+    font-family: Rock Salt;
+    font-size: 1.5em;
+    position: absolute;
+    color:rgb(155, 0, 0);
+}
+
+#clue > strong {
+    padding: 10px;
+}
+
+#zombie-box {
+    display: flex;
+    justify-content:center;
+    visibility: hidden;
+}
+
+#zombie-box >p {
+    font-family: Rock Salt;
+    font-size: 2em;
+    position: fixed;
+    color:crimson;
+    top: 7%;
+    z-index: 2;
+}
+
+#zombie-box >a {
+    position: fixed;
+    top: 3%;
+    z-index: 2;
+}
+
+a > button {
+    font-family: Long Cang;
+    font-size: 1.7em;
+    padding: 5px 15px;
+}
+
+#zombie {
+    position: fixed;
+    bottom: 0%;
+    height: 80%;
+    padding: 9% 30% 0% 30%;
+    background-color: rgba(0, 0, 0, 0.637);
+}
+
+.text-box {
+    display: flex;
+    justify-content:center;
+}
+
+span {
+    background-color:lightgray;
+    position: fixed;
+    bottom: 3%;
+    padding: 10px;
+    border: solid 1px darkgrey;
+    border-radius: 15px;
+}

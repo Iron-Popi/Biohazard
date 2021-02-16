@@ -1,15 +1,12 @@
 .room {
     background-image: url("/images/dining-room/dining-room.jpeg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    position: relative;
 }
 
-#doors, #painting1, #painting2, #painting3, #painting4, #dresser, #pot {
+#doors, #painting1, #painting2, #painting3, #painting4, #drawers, #corner-desk, #pot {
     position: fixed;
 }
 
-#doors, #painting1, #painting2, #painting3, #painting4, #dresser, #pot:hover {
+#doors, #drawers, #corner-desk, #pot:hover {
     cursor: pointer;
 }
 
@@ -48,11 +45,18 @@
     right: 1%;
 }
 
-#dresser {
-    height: 17%;
-    width: 10%;
-    top: 38%;
-    right: 38%;
+#drawers {
+    height: 15%;
+    width: 15%;
+    top: 55%;
+    right: 0%;
+}
+
+#corner-desk {
+    height: 26%;
+    width: 9%;
+    top: 54%;
+    left: 1%;
 }
 
 #pot {
@@ -62,16 +66,12 @@
     right: 32%;
 }
 
-.text-box {
-    display: flex;
-    justify-content:center;
+#clue > p {
+    top: 45%;
+    left: 35%;
+    transform: translate(0, -50%);
 }
 
-span {
-    background-color:lightgray;
-    position: fixed;
-    bottom: 3%;
-    padding: 10px;
-    border: solid 1px darkgrey;
-    border-radius: 15px;
+#zombie {
+    padding: 10% 36% 0% 36%;
 }
