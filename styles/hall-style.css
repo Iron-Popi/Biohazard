@@ -1,5 +1,10 @@
-.room {
-    background-image: url("/images1/rooms/hall.jpg");
+html { 
+    background: url("/images1/rooms/hall.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
 }
 
 #door1, #door2, #door3, #door4, #piano, #shadow {
@@ -11,49 +16,76 @@
 }
 
 #door1 {
-    top: 20%;
+    top: 14%;
     left: 7%;
-    height: 80%;
+    height: 85%;
     width: 11%;
+    background-color: rgba(0, 0, 255, 0.445);
 }
 
 #piano {
-    top: 65%;
+    top: 58%;
     left: 22%;
     height: 30%;
-    width: 13%;
+    width: 12%;
+    background-color: rgba(0, 0, 255, 0.445);
 }
 
 #door2 {
-    top: 50%;
-    left: 32%;
+    top: 40%;
+    left: 31%;
     height: 40%;
-    width: 8%;
+    width: 7%;
+    background-color: rgba(0, 0, 255, 0.445);
 }
 
 #door3 {
-    top: 52%;
-    right: 46.5%;
+    top: 42%;
+    right: 47%;
     height: 35%;
     width: 8%;
+    background-color: rgba(0, 0, 255, 0.445);
 }
 
 #door4 {
+    top: 15%;
+    right: 8%;
+    height: 85%;
+    width: 10%;
+    background-color: rgba(0, 0, 255, 0.445);
+}
+
+
+#clue1 {
+    position: fixed;
+    width: 300px;
+    height: 225px;
+    left: 40%;
     top: 25%;
-    right: 7%;
-    height: 75%;
-    width: 13%;
+    background-color:rgb(230, 230, 185);
+    z-index: 1;
+    box-shadow: 0 0 30px 50px rgba(0, 0, 0, 0.700);
+    visibility: hidden;
+}
+
+#clue1 > p {
+    font-family: Rock Salt;
+    font-size: 1.5em;
+    position: absolute;
+    color:rgb(155, 0, 0);
+    transform: translate(0, -50%);
+    top: 40%;
+    left: 17%;
+}
+
+#clue1 > strong {
+    padding: 10px;
 }
 
 #shadow {
-    top: 17%;
+    top: 9%;
     right: 27%;
     height: 45%;
     width: 7%;
-}
-
-#clue > p {
-    top: 45%;
-    left: 35%;
-    transform: translate(0, -50%);
+    background-color: rgba(0, 0, 255, 0.445);
 }

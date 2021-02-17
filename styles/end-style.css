@@ -15,11 +15,19 @@ div {
     width: 55%;
 }
 
-p {
+h1 {
+    font-family: Long Cang;
+    font-size: 7em;
+    color: darkred;
+    text-align: center;
+}
+
+#text {
     font-family: Long Cang;
     font-size: 2.5em;
     color: whitesmoke;
     text-align: center;
+    padding: 7%;
 }
 
 a {
@@ -31,4 +39,5 @@ button {
     font-family: Long Cang;
     font-size: 2em;
     padding: 5px 15px;
+    border-radius: 10px;
 }

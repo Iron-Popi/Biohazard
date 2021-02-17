@@ -1,73 +1,139 @@
-.room {
-    background-image: url("/images1/rooms/library.jpg");
+html { 
+    background: url("/images1/rooms/library.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
 }
 
 #lights, #table, #window, #bookshelf1, #bookshelf2, #mess-floor, #books {
     position: fixed;
 }
 
-#table, #bookshelf2, #window, #mess-floor, #books:hover {
+#table, #bookshelf2, #window, #back, #books:hover {
     cursor: pointer;
 }
 
 #lights {
-    height: 21%;
+    height: 16%;
     width: 15%;
-    top: 3%;
+    top: 0%;
     left: 40%;
+    background-color: rgba(0, 0, 255, 0.445);
 }
 
 #table {
     height: 16%;
     width: 22%;
-    bottom: 16%;
+    top: 63%;
     left: 27%;
+    background-color: rgba(0, 0, 255, 0.445);
 }
 
 #window {
-    height: 47%;
-    width: 6%;
-    top: 23%;
+    height: 45%;
+    width: 7%;
+    top: 15%;
     right: 18%;
+    background-color: rgba(0, 0, 255, 0.445);
 }
 
 #bookshelf1 {
-    height: 60%;
-    width: 6%;
-    top: 14%;
+    height: 57%;
+    width: 7%;
+    top: 9%;
     left: 8%;
+    background-color: rgba(0, 0, 255, 0.445);
 }
 
 #bookshelf2 {
     height: 34%;
     width: 6%;
-    top: 31%;
+    top: 23%;
     left: 32%;
+    background-color: rgba(0, 0, 255, 0.445);
 }
 
 #mess-floor {
-    height: 14%;
-    width: 16%;
-    bottom: 4%;
-    right: 23%;
+    height: 17%;
+    width: 26%;
+    bottom: 10%;
+    right: 13%;
+    background-color: rgba(0, 0, 255, 0.445);
 }
 
 #books {
     height: 4%;
-    width: 4%;
-    bottom: 33%;
+    width: 3%;
+    bottom: 41%;
     right: 42%;
+    background-color: rgba(0, 0, 255, 0.445);
 }
 
-#clue > p {
-    top: 45%;
-    left: 35%;
+#clue1 {
+    visibility: hidden;
+}
+
+#clue2 {
+    position: fixed;
+    width: 300px;
+    height: 225px;
+    left: 40%;
+    top: 25%;
+    background-color:rgb(230, 230, 185);
+    z-index: 1;
+    box-shadow: 0 0 30px 50px rgba(0, 0, 0, 0.700);
+    visibility: hidden;
+}
+
+#clue2 > p {
+    font-family: Rock Salt;
+    font-size: 1.5em;
+    position: absolute;
+    color:rgb(155, 0, 0);
     transform: translate(0, -50%);
+    top: 40%;
+    left: 5%;
+}
+
+#clue2 > strong {
+    padding: 10px;
 }
 
 #back {
+    visibility: visible;
     position: fixed;
     padding: 8px;
     bottom: 3%;
     right: 2%;
+}
+
+#zombie-dog {
+    display: flex;
+    justify-content:center;
+    visibility: hidden;
+}
+
+#zombie-dog >p {
+    font-family: Rock Salt;
+    font-size: 2em;
+    position: fixed;
+    color:crimson;
+    top: 2%;
+    z-index: 2;
+}
+
+#zombie-dog >a {
+    position: fixed;
+    top: 3%;
+    z-index: 2;
+}
+
+#zombie3 {
+    position: fixed;
+    bottom: 0%;
+    height: 80%;
+    padding: 9% 30% 0% 30%;
+    background-color: rgba(0, 0, 0, 0.637);
 }

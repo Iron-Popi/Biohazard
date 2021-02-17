@@ -1,51 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Long+Cang&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
-.room {
-    background-size: 100%;
-    background-repeat: no-repeat;
-    position: relative;
-}
-
-#clue {
-    position: absolute;
-    width: 300px;
-    height: 225px;
-    top: 1250%;
-    left: 40%;
-    background-color:rgb(230, 230, 185);
-    z-index: 1;
-    box-shadow: 0 0 30px 50px rgba(0, 0, 0, 0.700);
-    visibility: hidden;
-}
-
-#clue > p {
-    font-family: Rock Salt;
-    font-size: 1.5em;
-    position: absolute;
-    color:rgb(155, 0, 0);
-}
-
-#clue > strong {
-    padding: 10px;
-}
-
-#zombie-box {
+#zombie-man {
     display: flex;
     justify-content:center;
     visibility: hidden;
 }
 
-#zombie-box >p {
+#zombie-man >p {
     font-family: Rock Salt;
     font-size: 2em;
     position: fixed;
     color:crimson;
-    top: 7%;
+    top: 2%;
     z-index: 2;
 }
 
-#zombie-box >a {
+#zombie-man >a {
     position: fixed;
     top: 3%;
     z-index: 2;
@@ -57,7 +29,11 @@ a > button {
     padding: 5px 15px;
 }
 
-#zombie {
+#back {
+    visibility: hidden;
+}
+
+#zombie1 {
     position: fixed;
     bottom: 0%;
     height: 80%;
@@ -65,16 +41,51 @@ a > button {
     background-color: rgba(0, 0, 0, 0.637);
 }
 
+#zombie-woman {
+    visibility: hidden;
+}
+
+#zombie-dog {
+    visibility: hidden;
+}
+
+#clue2 {
+    visibility: hidden;
+}
+
+#clue3 {
+    visibility: hidden;
+}
+
 .text-box {
     display: flex;
     justify-content:center;
 }
 
-span {
-    background-color:lightgray;
-    position: fixed;
-    bottom: 3%;
+#timer {
     padding: 10px;
-    border: solid 1px darkgrey;
-    border-radius: 15px;
+}
+
+#timer > i {
+    font-family: Orbitron;
+    text-transform:none;
+    color: blanchedalmond;
+    font-weight: bold;
+    font-style: normal;   
+    font-size: 2em;
+    color: red;
+    padding: 3px;
+    text-shadow: 1px 1px 7px red;
+}
+
+span {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    position: fixed;
+    bottom: 5%;
+    color: whitesmoke;
+    text-shadow: 2px 2px 4px black;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 7px 10px;
+    border-radius: 12px;
 }
