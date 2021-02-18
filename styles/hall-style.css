@@ -50,7 +50,6 @@ html {
     width: 10%;
 }
 
-
 #clue1 {
     position: fixed;
     width: 300px;
@@ -82,4 +81,33 @@ html {
     right: 27%;
     height: 45%;
     width: 7%;
+}
+
+#zombie-man {
+    display: flex;
+    justify-content:center;
+    visibility: hidden;
+}
+
+#zombie-man >p {
+    font-family: Rock Salt;
+    font-size: 2em;
+    position: fixed;
+    color:crimson;
+    top: 2%;
+    z-index: 2;
+}
+
+#zombie-man >a {
+    position: fixed;
+    top: 3%;
+    z-index: 2;
+}
+
+#zombie1 {
+    position: fixed;
+    bottom: 0%;
+    height: 80%;
+    padding: 9% 30% 0% 30%;
+    background-color: rgba(0, 0, 0, 0.637);
 }

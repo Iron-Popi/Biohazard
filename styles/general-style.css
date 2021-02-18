@@ -2,27 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Long+Cang&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 
-#zombie-man {
-    display: flex;
-    justify-content:center;
-    visibility: hidden;
-}
-
-#zombie-man >p {
-    font-family: Rock Salt;
-    font-size: 2em;
-    position: fixed;
-    color:crimson;
-    top: 2%;
-    z-index: 2;
-}
-
-#zombie-man >a {
-    position: fixed;
-    top: 3%;
-    z-index: 2;
-}
-
 a > button {
     font-family: Long Cang;
     font-size: 1.7em;
@@ -33,12 +12,8 @@ a > button {
     visibility: hidden;
 }
 
-#zombie1 {
-    position: fixed;
-    bottom: 0%;
-    height: 80%;
-    padding: 9% 30% 0% 30%;
-    background-color: rgba(0, 0, 0, 0.637);
+#zombie-man {
+    visibility: hidden;
 }
 
 #zombie-woman {
@@ -46,6 +21,10 @@ a > button {
 }
 
 #zombie-dog {
+    visibility: hidden;
+}
+
+#clue1 {
     visibility: hidden;
 }
 
