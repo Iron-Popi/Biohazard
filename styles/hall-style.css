@@ -20,7 +20,6 @@ html {
     left: 7%;
     height: 85%;
     width: 11%;
-    background-color: rgba(0, 0, 255, 0.445);
 }
 
 #piano {
@@ -28,7 +27,6 @@ html {
     left: 22%;
     height: 30%;
     width: 12%;
-    background-color: rgba(0, 0, 255, 0.445);
 }
 
 #door2 {
@@ -36,7 +34,6 @@ html {
     left: 31%;
     height: 40%;
     width: 7%;
-    background-color: rgba(0, 0, 255, 0.445);
 }
 
 #door3 {
@@ -44,7 +41,6 @@ html {
     right: 47%;
     height: 35%;
     width: 8%;
-    background-color: rgba(0, 0, 255, 0.445);
 }
 
 #door4 {
@@ -52,7 +48,6 @@ html {
     right: 8%;
     height: 85%;
     width: 10%;
-    background-color: rgba(0, 0, 255, 0.445);
 }
 
 
@@ -87,5 +82,4 @@ html {
     right: 27%;
     height: 45%;
     width: 7%;
-    background-color: rgba(0, 0, 255, 0.445);
 }

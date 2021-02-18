@@ -46,7 +46,7 @@ doorLeft.addEventListener('mouseout', () => {
 });
 
 doorLeft.addEventListener('click', () => {
-    document.getElementById('theme_css').href = '/styles/dining-style.css';
+    document.getElementById('theme_css').href = './styles/dining-style.css';
 });
 
 doorBack.addEventListener('mouseover', () => {
@@ -60,7 +60,7 @@ doorBack.addEventListener('mouseout', () => {
 doorBack.addEventListener('click', () => {
     let code = prompt("Code:", "_ _ _");
     if (code === "396"){
-        window.location.href="/html/end.html";
+        window.location.href="./end.html";
     }
 });
 
@@ -99,7 +99,7 @@ doorRight.addEventListener('mouseout', () => {
 });
 
 doorRight.addEventListener('click', () => {
-    document.getElementById('theme_css').href = '/styles/library-style.css';
+    document.getElementById('theme_css').href = './styles/library-style.css';
 });
 
 shadow.addEventListener('mouseover', () => {
@@ -113,7 +113,7 @@ shadow.addEventListener('mouseout', () => {
 shadow.addEventListener('click', () => {
     zombieMan.style.visibility = "visible";
     window.setTimeout(function(){
-        window.location.href = "/html/game-over.html";
+        window.location.href = "./game-over.html";
     }, 3000);
 });
 
@@ -127,7 +127,7 @@ doors.addEventListener('mouseout', () => {
 });
 
 doors.addEventListener('click', () => {
-    document.getElementById('theme_css').href = '/styles/hall-style.css';
+    document.getElementById('theme_css').href = './styles/hall-style.css';
 });
 
 painting1.addEventListener('mouseover', () => {
@@ -203,7 +203,7 @@ drawers.addEventListener('mouseout', () => {
 drawers.addEventListener('click', () => {
     zombieWoman.style.visibility = "visible";
     window.setTimeout(function(){
-        window.location.href = "/html/game-over.html";
+        window.location.href = "./game-over.html";
     }, 3000);
 });
 
@@ -275,7 +275,7 @@ books.addEventListener('click', () => {
 });
 
 button.addEventListener('click', () => {
-    document.getElementById('theme_css').href = '/styles/hall-style.css';
+    document.getElementById('theme_css').href = './styles/hall-style.css';
 });
 
 windows.addEventListener('mouseover', () => {
@@ -289,6 +289,6 @@ windows.addEventListener('mouseout', () => {
 windows.addEventListener('click', () => {
     zombieDog.style.visibility = "visible";
     window.setTimeout(function(){
-        window.location.href = "/html/game-over.html";
+        window.location.href = "./game-over.html";
     }, 3000);
 });

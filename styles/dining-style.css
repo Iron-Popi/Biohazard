@@ -20,7 +20,6 @@ html {
     width: 15%;
     top: 30%;
     left: 24%;
-    background-color: rgba(0, 0, 255, 0.445);
 }
 
 #painting1 {
@@ -28,7 +27,6 @@ html {
     width: 13%;
     top: 16%;
     left: 4.5%;
-    background-color: rgba(0, 0, 255, 0.445);
 }
 
 #painting2 {
@@ -36,7 +34,6 @@ html {
     width: 5%;
     top: 24%;
     left: 42%;
-    background-color: rgba(0, 0, 255, 0.445);
 }
 
 #painting3 {
@@ -44,7 +41,6 @@ html {
     width: 6%;
     top: 27%;
     right: 24%;
-    background-color: rgba(0, 0, 255, 0.445);
 }
 
 #painting4 {
@@ -52,7 +48,6 @@ html {
     width: 8%;
     top: 21%;
     right: 1%;
-    background-color: rgba(0, 0, 255, 0.445);
 }
 
 #drawers {
@@ -60,7 +55,6 @@ html {
     width: 15%;
     top: 45%;
     right: 0%;
-    background-color: rgba(0, 0, 255, 0.445);
 }
 
 #corner-desk {
@@ -68,7 +62,6 @@ html {
     width: 9%;
     top: 46%;
     left: 1%;
-    background-color: rgba(0, 0, 255, 0.445);
 }
 
 #pot {
@@ -76,7 +69,6 @@ html {
     width: 5%;
     top: 47.5%;
     right: 32%;
-    background-color: rgba(0, 0, 255, 0.445);
 }
 
 #clue1 {

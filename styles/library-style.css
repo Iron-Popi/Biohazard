@@ -20,7 +20,6 @@ html {
     width: 15%;
     top: 0%;
     left: 40%;
-    background-color: rgba(0, 0, 255, 0.445);
 }
 
 #table {
@@ -28,7 +27,6 @@ html {
     width: 22%;
     top: 63%;
     left: 27%;
-    background-color: rgba(0, 0, 255, 0.445);
 }
 
 #window {
@@ -36,7 +34,6 @@ html {
     width: 7%;
     top: 15%;
     right: 18%;
-    background-color: rgba(0, 0, 255, 0.445);
 }
 
 #bookshelf1 {
@@ -44,7 +41,6 @@ html {
     width: 7%;
     top: 9%;
     left: 8%;
-    background-color: rgba(0, 0, 255, 0.445);
 }
 
 #bookshelf2 {
@@ -52,7 +48,6 @@ html {
     width: 6%;
     top: 23%;
     left: 32%;
-    background-color: rgba(0, 0, 255, 0.445);
 }
 
 #mess-floor {
@@ -60,7 +55,6 @@ html {
     width: 26%;
     bottom: 10%;
     right: 13%;
-    background-color: rgba(0, 0, 255, 0.445);
 }
 
 #books {
@@ -68,7 +62,6 @@ html {
     width: 3%;
     bottom: 41%;
     right: 42%;
-    background-color: rgba(0, 0, 255, 0.445);
 }
 
 #clue1 {
