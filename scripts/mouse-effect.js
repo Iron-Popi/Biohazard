@@ -16,7 +16,7 @@ doorBack.addEventListener('mouseout', () => {
 });
 
 piano.addEventListener('mouseover', () => {
-    span.innerHTML = "Ting ting, I don't know how to play music.";
+    span.innerHTML = "I don't know how to play music.";
 });
 
 piano.addEventListener('mouseout', () => {
@@ -46,6 +46,7 @@ shadow.addEventListener('mouseover', () => {
 shadow.addEventListener('mouseout', () => {
     span.innerHTML = "...";
 });
+
 
 // scripts for dining //
 doors.addEventListener('mouseover', () => {
@@ -111,6 +112,7 @@ drawers.addEventListener('mouseover', () => {
 drawers.addEventListener('mouseout', () => {
     span.innerHTML = "...";
 });
+
 
 // scripts for library //
 lights.addEventListener('mouseover', () => {

@@ -98,6 +98,7 @@ html {
 }
 
 #clue3 > strong {
+    position: fixed;
     padding: 10px;
 }
 

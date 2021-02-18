@@ -91,7 +91,9 @@ html {
 }
 
 #clue2 > strong {
+    position: fixed;
     padding: 10px;
+    right: 42%;
 }
 
 #back {
