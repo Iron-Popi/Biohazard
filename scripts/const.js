@@ -36,9 +36,9 @@ const clue1 = document.getElementById("clue1");
 const clue2 = document.getElementById("clue2");
 const clue3 = document.getElementById("clue3");
 
-// const zombieManSound = document.getElementById("zombie1-audio");
-// const zombieWomanSound = document.getElementById("zombie2-audio");
-// const zombieDogSound = document.getElementById("zombie2-audio");
+const zombieManSound = document.getElementById("zombie1-audio");
+const zombieWomanSound = document.getElementById("zombie2-audio");
+const zombieDogSound = document.getElementById("zombie2-audio");
 
 // const audioElement = document.createElement('audio');
 // audioElement.setAttribute("../sounds/Zombie Growl.mp3");
