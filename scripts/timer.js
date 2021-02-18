@@ -73,7 +73,7 @@ window.addEventListener("load", () => {
 });
 
 function youLose() {
-  window.location.href = "./html/game-over.html";
+  window.location.href = "./game-over.html";
 }
 
 setTimeout(youLose, 300000);
