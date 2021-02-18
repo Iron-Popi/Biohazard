@@ -26,7 +26,9 @@ doorRight.addEventListener('click', () => {
 
 shadow.addEventListener('click', () => {
     zombieMan.style.visibility = "visible";
-    soundEffect1();
+    const audioElement = document.createElement('audio');
+    audioElement.setAttribute('src',"../sounds/Zombie Growl.mp3");
+    audioElement.play();
     window.setTimeout(function(){
         window.location.href = "./game-over.html";
     }, 2300);
@@ -53,9 +55,11 @@ pot.addEventListener('click', () => {
 
 drawers.addEventListener('click', () => {
     zombieWoman.style.visibility = "visible";
-    soundEffect2();
+    const audioElement = document.createElement('audio');
+    audioElement.setAttribute('src',"../sounds/Scream Female.mp3");
+    audioElement.play();
     window.setTimeout(function(){
-        window.location.href = "./game-over.html";
+    window.location.href = "./game-over.html";
     }, 2000);
 });
 
@@ -84,8 +88,9 @@ button.addEventListener('click', () => {
 
 windows.addEventListener('click', () => {
     zombieDog.style.visibility = "visible";
-    soundEffect3();
-    window.setTimeout(function(){
+    const audioElement = document.createElement('audio');
+    audioElement.setAttribute('src',"../sounds/Zombie Dog Snarls.mp3");
+    audioElement.play();    window.setTimeout(function(){
         window.location.href = "./game-over.html";
     }, 2500);
 });
