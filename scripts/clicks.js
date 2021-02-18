@@ -7,16 +7,18 @@ doorBack.addEventListener('click', () => {
     let code = prompt("Code:", "_ _ _");
     if (code === "396"){
         window.location.href="./end.html";
+    } else if (code == null || person == "") {
+        span.innerHTML = "So there IS a way out.";
     }
 });
 
 piano.addEventListener('click', () => {
-    if (clue1.style.visibility === "hidden") {
-        clue1.style.visibility = "visible";
-        span.innerHTML = "I found something!";
+    if (clue1.style.visibility === "visible") {
+        clue1.style.visibility = "hidden";
     }
     else {
-        clue1.style.visibility = "hidden";
+        clue1.style.visibility = "visible";
+        span.innerHTML = "I found something!";
     }
 });
 
@@ -38,12 +40,12 @@ doors.addEventListener('click', () => {
 });
 
 desk.addEventListener('click', () => {
-    if (clue3.style.visibility === "hidden") {
-        clue3.style.visibility = "visible";
-        span.innerHTML = "I found something!";
+    if (clue3.style.visibility === "visible") {
+        clue3.style.visibility = "hidden";
     }
     else {
-        clue3.style.visibility = "hidden";
+        clue3.style.visibility = "visible";
+        span.innerHTML = "I found something!";
     }
 });
 
@@ -61,12 +63,12 @@ drawers.addEventListener('click', () => {
 
 // clicks for library //
 table.addEventListener('click', () => {
-    if (clue2.style.visibility === "hidden") {
-        clue2.style.visibility = "visible";
-        span.innerHTML = "I found something!";
+    if (clue2.style.visibility === "visible") {
+        clue2.style.visibility = "hidden";
     }
     else {
-        clue2.style.visibility = "hidden";
+        clue2.style.visibility = "visible";
+        span.innerHTML = "I found something!";
     }
 });
 
