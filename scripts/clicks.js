@@ -26,7 +26,7 @@ doorRight.addEventListener('click', () => {
 
 shadow.addEventListener('click', () => {
     zombieMan.style.visibility = "visible";
-    zombieManSound.play();
+    document.getElementById("zombie1-audio").play();
     window.setTimeout(function(){
         window.location.href = "./game-over.html";
     }, 2300);
@@ -53,7 +53,7 @@ pot.addEventListener('click', () => {
 
 drawers.addEventListener('click', () => {
     zombieWoman.style.visibility = "visible";
-    zombieWomanSound.play();
+    document.getElementById("zombie2-audio").play();
     window.setTimeout(function(){
     window.location.href = "./game-over.html";
     }, 2000);
@@ -84,7 +84,7 @@ button.addEventListener('click', () => {
 
 windows.addEventListener('click', () => {
     zombieDog.style.visibility = "visible";
-    zombieDogSound.play();
+    document.getElementById("zombie3-audio").play();
     window.setTimeout(function(){
     window.location.href = "./game-over.html";
     }, 2500);

@@ -1,5 +1,5 @@
-class Chronometer {
-  constructor(currentMinute = 600, currentSecond = 60, intervalId = 0) {
+class Countdown {
+  constructor(currentMinute = 300, currentSecond = 60, intervalId = 0) {
     this.currentMinute = currentMinute;
     this.currentSecond = currentSecond;
 
@@ -38,7 +38,7 @@ class Chronometer {
   }
 }
 
-const chronometer = new Chronometer();
+const timer = new Countdown();
 
 let minDec = document.getElementById("minDec");
 let minUni = document.getElementById("minUni");
@@ -51,13 +51,13 @@ function printTime() {
 }
 
 function printMinutes() {
-  let minutes = chronometer.twoDigitsMin(chronometer.getMinutes());
+  let minutes = timer.twoDigitsMin(timer.getMinutes());
   minDec.innerHTML = minutes[0];
   minUni.innerHTML = minutes[1];
 }
 
 function printSeconds() {
-  let seconds = chronometer.twoDigitsSec(chronometer.getSeconds());
+  let seconds = timer.twoDigitsSec(timer.getSeconds());
   if (seconds < 10) {
     secDec.innerHTML = "0";
     secUni.innerHTML = seconds[0];
@@ -69,11 +69,11 @@ function printSeconds() {
 
 window.addEventListener("load", () => {
   console.log("Timer starts");
-  chronometer.start(printTime);
+  timer.start(printTime);
 });
 
 function youLose() {
-  window.location.href = "/html/game-over.html";
+  window.location.href = "./html/game-over.html";
 }
 
-setTimeout(youLose, 600000);
+setTimeout(youLose, 300000);
